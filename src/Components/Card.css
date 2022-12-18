@@ -1,13 +1,11 @@
 .card__images__container {
     display: flex;
     float: left;
-
 }
 
 .card__images {
     width: 200px;
     height: 200px;
-
 }
 
 .title__div {

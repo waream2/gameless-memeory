@@ -12,32 +12,29 @@ function App() {
   const [randomArray, setRandomArray] = useState([cardData]);
   const [idArray, setIdArray] = useState([]);
 
+  let newHighScore = 0;
 
-let newHighScore = 0;
-
-const currScore = () => {
-  setScore(score + 1);
-  if (score > highScore) {
-    newHighScore = score;
-    setInvisibleScore(newHighScore);
+  const currScore = () => {
+    setScore(score + 1);
+    if (score > highScore) {
+      newHighScore = score;
+      setInvisibleScore(newHighScore);
+    }
   }
-}
 
-const highestScore = () => {
-  setHighScore(invisibleScore + 1);
-}
+  const highestScore = () => {
+    setHighScore(invisibleScore + 1);
+  }
 
-
-const addId = (id) => {
-    if(!idArray.includes(id)) {
-      setIdArray(prevArray => [...prevArray, id]); 
-      currScore();
-    } else {
-      setScore(0);
-      highestScore();
-      setIdArray([]);
-    }}
-
+  const addId = (id) => {
+      if(!idArray.includes(id)) {
+        setIdArray(prevArray => [...prevArray, id]); 
+        currScore();
+      } else {
+        setScore(0);
+        highestScore();
+        setIdArray([]);
+      }}
   
   function shuffle (e) {
     for(let i = cardData.length - 1; i > 0; i--) {
@@ -47,7 +44,6 @@ const addId = (id) => {
         cardData[j] = temp;
     }
     setRandomArray([...cardData]);
-
   }
 
   const cardsMap = cardData.map(item => {
