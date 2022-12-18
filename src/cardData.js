@@ -1,8 +1,8 @@
 const cardData = [
     {   
         "id": 1,
-        "title": "Ant Man",
-        "imgLocation": "Ant Man.png"
+        "title": "Captain America",
+        "imgLocation": "Captain America.png"
     },
     {   
         "id": 2,
@@ -11,8 +11,8 @@ const cardData = [
     },
     {   
         "id": 3,
-        "title": "Captain America",
-        "imgLocation": "Captain America.png"
+        "title": "Ant Man",
+        "imgLocation": "Ant Man.png"
     },
     {   
         "id": 4,

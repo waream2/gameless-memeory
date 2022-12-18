@@ -69,13 +69,10 @@ const addId = (id) => {
     <div className="App">
       <Header />
       <h2>High Score: {highScore}</h2>
-      <h2>
-        Score: {score}
-      </h2>
+      <h2>Score: {score}</h2>
       <div className="card__div">
         {cardsMap}
       </div>
-     
     </div>
   );
 }
