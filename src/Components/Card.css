@@ -8,6 +8,10 @@
     height: 200px;
 }
 
+.card__images:hover {
+    box-shadow: 0 0 15px rgba(0, 39, 135, 2);
+}
+
 .title__div {
     position: absolute;
     color: white;
