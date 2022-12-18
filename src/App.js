@@ -3,7 +3,6 @@ import cardData from "./cardData.js";
 import Card from './Components/Card';
 import Header from './Components/Header';
 import './App.css';
-import { useEffect } from 'react';
 
 
 function App() {
@@ -39,7 +38,6 @@ const addId = (id) => {
       setIdArray([]);
     }}
 
-// useEffect(() => console.log(newHighScore));
   
   function shuffle (e) {
     for(let i = cardData.length - 1; i > 0; i--) {
@@ -60,7 +58,6 @@ const addId = (id) => {
         title={item.title}
         shuffle={shuffle}
         addId={addId}
-        // score={currScore}
       />
     )
   })

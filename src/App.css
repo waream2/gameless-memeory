@@ -5,7 +5,20 @@ body {
     align-items: center;
 }
 
-
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 140px;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.76) 15.54%,
+        rgba(0, 0, 0, 0.192) 60.23%, rgba(0, 0, 0, 8e-5) 100%
+    );
+}
 
 .card__div {
     width: 100%;
@@ -16,3 +29,6 @@ body {
     grid-column-gap: 10px;
 }
 
+@media(max-width: 968px) {
+    .card__div {grid-template-columns: repeat(2, 1fr);}
+}
