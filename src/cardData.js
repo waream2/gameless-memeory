@@ -89,6 +89,16 @@ const cardData = [
         "title": "Spiderman",
         "imgLocation": "Spiderman.png"
     },
+    {   
+        "id": 19,
+        "title": "Starlord",
+        "imgLocation": "Starlord.png"
+    },
+    {   
+        "id": 20,
+        "title": "Wolverine",
+        "imgLocation": "Wolverine.png"
+    },
 ];
 
 export default cardData;
